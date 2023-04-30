@@ -38,3 +38,18 @@ margin-left: 40px;
             External CSS
 
 style.css =>
+
+            outline
+
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+
+p {
+margin: 30px;
+border: 1px solid black;
+outline: 1px solid red;
+outline-offset: 15px;
+}
