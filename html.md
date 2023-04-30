@@ -53,3 +53,28 @@ border: 1px solid black;
 outline: 1px solid red;
 outline-offset: 15px;
 }
+
+            CSS Text Decoration
+
+h1 {
+text-decoration-line: overline;
+}
+
+h2 {
+text-decoration-line: line-through;
+}
+
+h3 {
+text-decoration-line: underline;
+}
+
+p {
+text-decoration-line: overline underline;
+}
+
+              CSS Text Spacing
+
+text-indent = paragraf başı
+letter-spacing = harf arası boşluklar
+line-height = satırlar arası boşluk
+word-spacing = kelimeler arası boşluk
