@@ -127,3 +127,23 @@ padding: 8px;
 
 tr:nth-child(even) {background-color: #f2f2f2;}
 </style>
+
+          position: sticky;
+
+div.sticky {
+position: -webkit-sticky; /_ Safari _/
+position: sticky;
+top: 0;
+background-color: green;
+border: 2px solid #4CAF50;
+}
+
+          Tam Ortalama
+
+.center p {
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
