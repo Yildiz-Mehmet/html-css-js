@@ -1,4 +1,8 @@
-function reverseString(str) {
-  console.log(str.split("").reverse().join(""));
+function reverseString(number) {
+  let end = 1;
+  for (let i = number; i >= 1; i--) {
+    end *= i;
+  }
+  console.log(end);
 }
-reverseString("Hello");
+reverseString(3);
