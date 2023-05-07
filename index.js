@@ -1,17 +1,31 @@
-// * Bir dizi içinde sadece tek sayıları içinden alıp başka bir dizi oluşturulmak isteniyor.Ve bu sayıların toplamını bulan bir fonksiyon yazılması isteniyor...
-
-sumOfOddNumbers = (array) => {
-  let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] % 2 === 1) {
-      sum += array[i];
-    }
+function aritmetik(arr) {
+  sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
   }
-  return sum;
-};
-
-number = [1, 2, 6, 7, 3, 1, 23, 3];
-sum = sumOfOddNumbers(number);
-
-const x = 1;
-console.log("x= " + x);
+  return sum / arr.length;
+}
+// console.log(aritmetik([3, 4, 5, 4, 4]));
+function geometrik(arr) {
+  multible = 1;
+  for (let i = 0; i < arr.length; i++) {
+    multible *= arr[i];
+  }
+  return multible ** (1 / arr.length);
+}
+// console.log(geometrik([4, 4]));
+let length = [];
+function longestWord(arr) {
+  let splited = arr.split(" ");
+  for (let i = 0; i < splited.length; i++) {
+    length.push(splited[i].length);
+  }
+  let max = Math.max.apply(null, length);
+  let maxİndex = length.indexOf(max);
+  return splited[maxİndex];
+}
+console.log(
+  longestWord(
+    "merhaba nasılsın ben mehmet on tane relevetions nasılolurdabnmqadnwlkn"
+  )
+);
