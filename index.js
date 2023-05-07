@@ -29,3 +29,22 @@ console.log(
     "merhaba nasılsın ben mehmet on tane relevetions nasılolurdabnmqadnwlkn"
   )
 );
+let newarr = [];
+
+function capitalizeWords(arr) {
+  let capital = arr.toUpperCase();
+  let splited = capital.split(" ");
+
+  for (let i = 0; i < splited.length; i++) {
+    for (let k = 0; k < splited[i].length; k++) {
+      if (k === 0) {
+        newarr += splited[i][k];
+      } else {
+        newarr += splited[i][k].toLowerCase();
+      }
+    }
+    newarr += " ";
+  }
+  console.log(newarr.split(","));
+}
+console.log(capitalizeWords("ben iyiyim nasılsın evet aynen"));
