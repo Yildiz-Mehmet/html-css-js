@@ -64,4 +64,18 @@ function arraySum(arr) {
     return false;
   }
 }
-console.log(arraySum([1, 2, 4, 29, 22]));
+let newArr = [];
+let index = null;
+function repeatNumber(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(arr.filter((x) => x == arr[i]).length);
+    let maxValue = Math.max(...newArr);
+    index = newArr.indexOf(maxValue);
+  }
+  return arr[index];
+}
+console.log(
+  repeatNumber([
+    1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7,
+  ])
+);
