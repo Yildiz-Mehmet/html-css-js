@@ -85,11 +85,15 @@
 
 // let numbers = [1, 2, 3, 4, 5, 6, 7];
 // for (let number in numbers) console.log(numbers[number]);
-const verify = true;
-let cars = {
-  brand: "Mercedes",
-  amount: 23,
-  vites: "manuel",
-  fuel: "disel",
-};
-console.log(cars);
+// const verify = true;
+// let cars = {
+//   brand: "Mercedes",
+//   amount: 23,
+//   vites: "manuel",
+//   fuel: "disel",
+// };
+// console.log(cars);
+
+let numbers = [1, 2, 2, 2, 3, 4, 4, 5, 5, 5, 5, 5];
+let uniqeNumbers = [...new Set(numbers)];
+console.log(uniqeNumbers);
