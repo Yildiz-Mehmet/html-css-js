@@ -80,13 +80,15 @@
 //   ])
 // );
 
-let cars = [
-  {
-    brand: "Mercedes",
-    amount: 23,
-    vites: "manuel",
-    fuel: "disel",
-  },
-  { brand: "Opel", amount: 21, vites: "otomatic", fuel: "oil" },
-];
-let numbers = [{ name: " ", last_name: "" }];
+let cars = {
+  brand: "Mercedes",
+  amount: 23,
+  vites: "manuel",
+  fuel: "disel",
+};
+
+const control = "brand" in cars;
+console.log(control);
+
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+for (let number in numbers) console.log(numbers[number]);
