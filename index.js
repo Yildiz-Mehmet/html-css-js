@@ -97,3 +97,9 @@
 let numbers = [1, 2, 2, 2, 3, 4, 4, 5, 5, 5, 5, 5];
 let uniqeNumbers = [...new Set(numbers)];
 console.log(uniqeNumbers);
+
+let cars = {
+  brand: "mercedes",
+  color: "red",
+  year: 23,
+};
