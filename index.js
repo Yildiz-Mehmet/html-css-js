@@ -49,33 +49,44 @@
 // }
 // console.log(capitalizeWords("ben iyiyim nasılsın evet aynen"));
 
-function arraySum(arr) {
-  let sum = 0;
-  let sorted = arr.sort(function (a, b) {
-    return a - b;
-  });
-  for (let i = 0; i < sorted.length - 1; i++) {
-    sum += sorted[i];
-  }
+// function arraySum(arr) {
+//   let sum = 0;
+//   let sorted = arr.sort(function (a, b) {
+//     return a - b;
+//   });
+//   for (let i = 0; i < sorted.length - 1; i++) {
+//     sum += sorted[i];
+//   }
 
-  if (sum === sorted[sorted.length - 1]) {
-    return true;
-  } else {
-    return false;
-  }
-}
-let newArr = [];
-let index = null;
-function repeatNumber(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    newArr.push(arr.filter((x) => x == arr[i]).length);
-    let maxValue = Math.max(...newArr);
-    index = newArr.indexOf(maxValue);
-  }
-  return arr[index];
-}
-console.log(
-  repeatNumber([
-    1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7,
-  ])
-);
+//   if (sum === sorted[sorted.length - 1]) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// let newArr = [];
+// let index = null;
+// function repeatNumber(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     newArr.push(arr.filter((x) => x == arr[i]).length);
+//     let maxValue = Math.max(...newArr);
+//     index = newArr.indexOf(maxValue);
+//   }
+//   return arr[index];
+// }
+// console.log(
+//   repeatNumber([
+//     1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7,
+//   ])
+// );
+
+let cars = [
+  {
+    brand: "Mercedes",
+    amount: 23,
+    vites: "manuel",
+    fuel: "disel",
+  },
+  { brand: "Opel", amount: 21, vites: "otomatic", fuel: "oil" },
+];
+let numbers = [{ name: " ", last_name: "" }];
