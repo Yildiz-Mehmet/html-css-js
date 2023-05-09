@@ -80,15 +80,16 @@
 //   ])
 // );
 
+// const control = "brand" in cars;
+// console.log(control);
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// for (let number in numbers) console.log(numbers[number]);
+const verify = true;
 let cars = {
   brand: "Mercedes",
   amount: 23,
   vites: "manuel",
   fuel: "disel",
 };
-
-const control = "brand" in cars;
-console.log(control);
-
-let numbers = [1, 2, 3, 4, 5, 6, 7];
-for (let number in numbers) console.log(numbers[number]);
+console.log(cars);
