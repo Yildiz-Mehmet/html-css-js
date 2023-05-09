@@ -103,3 +103,4 @@ let cars = {
   color: "red",
   year: 23,
 };
+console.log(Object.keys(cars));
