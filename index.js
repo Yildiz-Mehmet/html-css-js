@@ -94,14 +94,25 @@
 // };
 // console.log(cars);
 
-let numbers = [1, 2, 2, 2, 3, 4, 4, 5, 5, 5, 5, 5];
-let uniqeNumbers = [...new Set(numbers)];
-console.log(uniqeNumbers);
+// let numbers = [1, 2, 2, 2, 3, 4, 4, 5, 5, 5, 5, 5];
+// let uniqeNumbers = [...new Set(numbers)];
+// console.log(uniqeNumbers);
 
-let cars = {
-  brand: "mercedes",
-  color: "red",
-  year: 23,
-};
-const { year, brand, ...newCars } = cars;
-console.log(newCars);
+// let cars = {
+//   brand: "mercedes",
+//   color: "red",
+//   year: 23,
+// };
+// const { year, brand, ...newCars } = cars;
+// console.log(newCars);
+
+function narsisticNumber(arr) {
+  let sum = 0;
+  let arrLength = arr.toString().length;
+  for (ar in arr.toString().split("")) {
+    sum += Number(arr.toString().split("")[ar]) ** arrLength;
+  }
+  console.log(sum);
+}
+
+console.log(narsisticNumber(1122));
