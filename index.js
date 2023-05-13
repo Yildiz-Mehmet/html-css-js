@@ -106,13 +106,13 @@
 // const { year, brand, ...newCars } = cars;
 // console.log(newCars);
 
-function narsisticNumber(arr) {
-  let sum = 0;
-  let arrLength = arr.toString().length;
-  for (ar in arr.toString().split("")) {
-    sum += Number(arr.toString().split("")[ar]) ** arrLength;
-  }
-  console.log(sum);
-}
+// function narsisticNumber(arr) {
+//   let sum = 0;
+//   let arrLength = arr.toString().length;
+//   for (ar in arr.toString().split("")) {
+//     sum += Number(arr.toString().split("")[ar]) ** arrLength;
+//   }
+//   console.log(sum);
+// }
 
-console.log(narsisticNumber(1122));
+// console.log(narsisticNumber(1122));
