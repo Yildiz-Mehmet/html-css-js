@@ -35,3 +35,8 @@
 // }
 // let myPerson = new Person("mehmet", 23, "male");
 // console.log(myPerson);
+const cars = (props) => {
+  name: "mehmet";
+};
+
+console.log();
