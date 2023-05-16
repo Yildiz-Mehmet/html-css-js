@@ -40,3 +40,6 @@
 // };
 
 // console.log();
+// const cars = ["opel", "mercedes", "audi", "volvo"];
+// console.log(cars.splice(1, 2));
+// console.log(cars);
